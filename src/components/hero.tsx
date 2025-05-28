@@ -46,24 +46,25 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 onClick={scrollToProjects}
-                className="px-8 py-3 bg-transparent text-cyan-400 border border-cyan-400 font-semibold shadow-md ring-1 ring-cyan-400/50 hover: hover:bg-cyan-400 hover:text-slate-900 hover:shadow-cyan-400/40 transition-all duration-300"
+                className="w-full sm:w-auto px-8 py-3 bg-transparent text-cyan-400 border border-cyan-400 font-semibold shadow-md ring-1 ring-cyan-400/50 hover:bg-cyan-400 hover:text-slate-900 hover:shadow-cyan-400/40 transition-all duration-300"
               >
                 View My Work
               </Button>
-              <div className="flex gap-4">
-                <a
-                  href="/Hariharan MS.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+
+              <a
+                href="/Hariharan MS.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto"
+              >
+                <Button
+                  className="w-full sm:w-auto px-8 py-3 bg-transparent text-cyan-400 border border-cyan-400 font-semibold shadow-md ring-1 ring-cyan-400/50 hover:bg-cyan-400 hover:text-slate-900 hover:shadow-cyan-400/40 transition-all duration-300"
                 >
-                  <Button
-                    className="px-8 py-3 bg-transparent text-cyan-400 border border-cyan-400 font-semibold shadow-md ring-1 ring-cyan-400/50 hover:bg-cyan-400 hover:text-slate-900 hover:shadow-cyan-400/40 transition-all duration-300"
-                  >
-                    View Resume
-                  </Button>
-                </a>
-              </div>
+                  View Resume
+                </Button>
+              </a>
             </div>
+
           </div>
 
           {/* Profile Photo */}
