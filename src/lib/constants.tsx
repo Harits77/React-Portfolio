@@ -2,6 +2,7 @@ import project1 from "../assets/Project1.png"
 import project2 from "../assets/Project2.png"
 import project3 from "../assets/Project3.png"
 import project4 from "../assets/Project4.png"
+import project5 from "../assets/Project5.png"
 
 
 export const PROJECTS = [
@@ -28,6 +29,13 @@ export const PROJECTS = [
     image: project1,
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
     code: "https://github.com/Harits77/Healthlink-Pro-MERN-Project.git",
+  },
+   {
+    title: "Personal Book Library",
+    description: "Personal Book Library is a full-stack app that lets users search, save, and manage books using Google Books API, built with Next.js, Spring Boot, and MongoDB.",
+    image: project5,
+    technologies: ["Next.js","SpringBoot", "MongoDB"],
+    code: "https://github.com/Harits77/Personal-Book-Library.git  ",
   },
   {
     title: "Curd Operations",
