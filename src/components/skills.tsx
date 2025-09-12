@@ -15,6 +15,7 @@ import {
   SiGithub,
   SiVercel,
   SiPostman,
+  SiDocker,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { VscCode } from "react-icons/vsc";
@@ -33,8 +34,6 @@ const backendSkills = [
   { name: "Spring Boot", icon: SiSpringboot, color: "text-green-500" },
   { name: "Java", icon: FaJava, color: "text-red-500" },
   { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
-  { name: "Node.js", icon: SiNodedotjs, color: "text-green-600" },
-  { name: "Express", icon: SiExpress, color: "text-white" }
 ];
 
 const Tools = [
@@ -43,6 +42,7 @@ const Tools = [
   { name: "GitHub", icon: SiGithub, color: "text-white" },
   { name: "Vercel", icon: SiVercel, color: "text-white" },
   { name: "Postman", icon: SiPostman, color: "text-orange-500" },
+   { name: "Docker", icon: SiDocker, color: "text-white" },
 ];
 
 
