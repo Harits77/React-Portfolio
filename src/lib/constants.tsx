@@ -40,7 +40,7 @@ export const PROJECTS = [
   },
     {
     title: "AI Chatbot",
-    description: "Developed an intelligent AI chatbot using React and Node.js, capable of natural language understanding and real-time conversation. Integrates with OpenAI API for advanced responses and supports multi-turn dialogue.",
+    description: "Developed an intelligent AI chatbot using React and python, capable of natural language understanding and real-time conversation. Integrates with OpenAI API for advanced responses and supports multi-turn dialogue.",
     image: Project6,
     technologies: ["React.js", "python", "Flask", "OpenAI API"],
     code: "https://github.com/Harits77/AI-Chatbot-Project.git",
