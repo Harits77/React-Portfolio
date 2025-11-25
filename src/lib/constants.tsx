@@ -9,12 +9,12 @@ import Project6 from "../assets/Project6.png"
 export const PROJECTS = [
 
   {
-    title: "Shopping Cart",
-    description: "A simple shopping cart built in React that allows users to add and remove products.Includes basic cart management features like item tracking and dynamic updates.",
+    title: "Shopping Mart",
+    description: "Shopping Mart is a responsive e-commerce web application built with React. It allows users to browse products, add and remove items from the cart, and see real-time updates using Zustand for state management and localStorage for persistence. Product data is fetched from a public API.",
     image: project2,
-    technologies: ["React.js", "Tailwind.css"],
-    livedemo: "https://shopcart-woad.vercel.app/",
-    code: "https://github.com/Harits77/shopcart-react.git",
+    technologies: ["React.js", "Tailwind.css", "Zustand"],
+    livedemo: "https://shopping-mart-jet.vercel.app/",
+    code: "https://github.com/Harits77/Shopping-Mart.git",
   },
   {
     title: "HealthLink Pro",
