@@ -26,9 +26,10 @@ export default function Hero() {
           />
         </h2>
 
-        <p className="text-xl sm:text-2xl text-slate-400 mb-8">
-          Passionate developer, contributing my skills to drive success and grow professionally.
-        </p>
+       <p className="text-xl sm:text-2xl text-slate-400 mb-8">
+           Full-Stack Developer skilled in React, Next.js, Spring Boot, and MongoDB — experienced in building real-time applications and REST APIs.
+       </p>
+
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
