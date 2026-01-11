@@ -4,7 +4,7 @@ import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
 import { Label } from "../components/ui/label";
-import { Mail,MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { SiGithub, SiLinkedin, SiX, SiInstagram } from "react-icons/si";
 
 
@@ -45,7 +45,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-slate-800/50">
+    <section id="contact" className="py-20 bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get In Touch</h2>
@@ -54,7 +54,7 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="animate-slide-up">
-            <h3 className="text-2xl font-bold mb-6 text-cyan-400">Let's Work Together</h3>
+            <h3 className="text-2xl font-bold mb-6 text-white">Let's Work Together</h3>
             <p className="text-slate-300 text-lg mb-8">
               I'm always interested in new opportunities and exciting projects.
               Whether you have a question or just want to say hi, feel free to reach out!
@@ -65,8 +65,8 @@ export default function Contact() {
                 const IconComponent = item.icon;
                 return (
                   <div key={index} className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-cyan-400 rounded-lg flex items-center justify-center">
-                      <IconComponent className="h-5 w-5 text-" />
+                    <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
+                      <IconComponent className="h-5 w-5 text-black" />
                     </div>
                     <div>
                       <p className="font-medium">{item.value}</p>
@@ -90,7 +90,7 @@ export default function Contact() {
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="w-12 h-12 bg-slate-700 hover:bg-cyan-400 transition-all duration-300 hover:scale-110"
+                      className="w-12 h-12 bg-black hover:bg-white transition-all duration-300 hover:scale-110"
                     >
                       <IconComponent className="h-5 w-5 text-white" />
                     </Button>
@@ -101,11 +101,16 @@ export default function Contact() {
 
           </div>
 
-          <Card className="card-gradient border-slate-600 animate-slide-up">
+          <Card className="bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl shadow-black/40 animate-slide-up rounded-2xl">
             <CardContent className="p-8">
-              <form action="https://formspree.io/f/xpwqbaob" method="POST" className="space-y-6">
+              <form
+                action="https://formspree.io/f/xpwqbaob"
+                method="POST"
+                className="space-y-6"
+                onSubmit={() => setIsSubmitting(true)}
+              >
                 <div>
-                  <Label htmlFor="name" className="text-sm font-medium mb-2 block">
+                  <Label htmlFor="name" className="text-sm font-medium mb-2 block text-slate-200">
                     Name
                   </Label>
                   <Input
@@ -114,13 +119,13 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleInputChange}
                     placeholder="Your Name"
-                    className="bg-slate-700 border-slate-600 focus:border-primary focus:ring-primary"
+                    className="bg-white/5 border border-white/10 text-white placeholder:text-slate-500 focus:border-violet-400 focus:ring-violet-400/30 rounded-xl h-12"
                     required
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="email" className="text-sm font-medium mb-2 block">
+                  <Label htmlFor="email" className="text-sm font-medium mb-2 block text-slate-200">
                     Email
                   </Label>
                   <Input
@@ -130,13 +135,13 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="your.email@example.com"
-                    className="bg-slate-700 border-slate-600 focus:border-primary focus:ring-primary"
+                    className="bg-white/5 border border-white/10 text-white placeholder:text-slate-500 focus:border-violet-400 focus:ring-violet-400/30 rounded-xl h-12"
                     required
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="subject" className="text-sm font-medium mb-2 block">
+                  <Label htmlFor="subject" className="text-sm font-medium mb-2 block text-slate-200">
                     Subject
                   </Label>
                   <Input
@@ -145,13 +150,13 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={handleInputChange}
                     placeholder="Project Discussion"
-                    className="bg-slate-700 border-slate-600 focus:border-primary focus:ring-primary"
+                    className="bg-white/5 border border-white/10 text-white placeholder:text-slate-500 focus:border-violet-400 focus:ring-violet-400/30 rounded-xl h-12"
                     required
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="message" className="text-sm font-medium mb-2 block">
+                  <Label htmlFor="message" className="text-sm font-medium mb-2 block text-slate-200">
                     Message
                   </Label>
                   <Textarea
@@ -161,7 +166,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     rows={5}
                     placeholder="Tell me about your project..."
-                    className="bg-slate-700 border-slate-600 focus:border-primary focus:ring-primary resize-none"
+                    className="bg-white/5 border border-white/10 text-white placeholder:text-slate-500 focus:border-violet-400 focus:ring-violet-400/30 rounded-xl resize-none"
                     required
                   />
                 </div>
@@ -169,13 +174,14 @@ export default function Contact() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="btn-gradient w-full py-3 text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                  className="w-full py-6 rounded-xl bg-gradient-to-br from-slate-800 to-black text-white "
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </CardContent>
           </Card>
+
         </div>
       </div>
     </section>

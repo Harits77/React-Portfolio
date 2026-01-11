@@ -5,13 +5,15 @@ import Skills from "../components/skills";
 import Projects from "../components/projects";
 import Contact from "../components/contact";
 import Education from "../components/education";
+import Experience from "../components/Experience";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-50">
+    <div className="min-h-screen bg-black text-white">
       <Header />
       <Hero />
       <About />
+      <Experience />
       <Skills />
       <Projects />
       <Education />

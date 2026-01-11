@@ -2,17 +2,17 @@ import hari from "../assets/hari.jpeg"
 export default function About() {
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+    <section id="about" className="py-20 bg-zinc-950 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20 animate-fade-in">
           <h2 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight">About Me</h2>
-          <div className="w-24 h-1 bg-cyan-400 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-white mx-auto rounded-full"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center justify-items-center">
           {/* Image Section */}
           <div className="relative animate-slide-up group">
-            <div className="absolute -inset-2 bg-cyan-500 opacity-20 blur-lg rounded-3xl group-hover:scale-105 transition-transform duration-500"></div>
+            <div className="absolute -inset-2 rounded-3xl group-hover:scale-105 transition-transform duration-500"></div>
             <img
               src={hari}
               alt="Professional developer portrait"
@@ -22,14 +22,19 @@ export default function About() {
 
           {/* Text Section */}
           <div className="animate-slide-up">
-            <h3 className="text-3xl font-semibold mb-6 text-cyan-400">Full Stack Developer</h3>
+            <h3 className="text-3xl font-semibold mb-6 text-white">
+              Full Stack Developer
+            </h3>
+
             <p className="text-slate-300 text-lg leading-relaxed mb-6">
               I'm a results-driven full-stack developer with expertise in modern web technologies and a passion for building scalable, user-focused applications.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed">
-              My work bridges clean code and scalable architecture, delivering smooth, responsive interfaces powered by reliable backend systems.
-              I enjoy turning complex challenges into elegant digital experiences through collaboration, innovation, and practical problem-solving.
+              During my internship, I worked on real-time applications, developed REST APIs, and improved deployment workflows using Git, GitHub Actions, and Docker.
+              I enjoy creating clean, responsive interfaces and supporting them with reliable backend systems. I’m passionate about learning, solving real-world problems,
+              and contributing to impactful software projects.
             </p>
+
           </div>
         </div>
       </div>

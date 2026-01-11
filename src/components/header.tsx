@@ -42,14 +42,14 @@ export default function Header() {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrollY > 50 ? "bg-slate-900/95 backdrop-blur-sm" : "bg-slate-900/95"
-          } border-b border-slate-800`}
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrollY > 50 ? "bg-black/95 backdrop-blur-sm" : "bg-black/95"
+          } border-b border-black/50`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
               <h1
-                className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-sky-400 drop-shadow-md"
+                className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white drop-shadow-md"
                 style={{ fontFamily: "'Fredoka One', cursive" }}
               >
                 Hariharan
@@ -63,7 +63,7 @@ export default function Header() {
                   <button
                     key={link.href}
                     onClick={() => scrollToSection(link.href)}
-                    className="text-slate-300 hover:text-cyan-400 transition-colors duration-300 font-medium"
+                    className="text-slate-300 hover:text-white transition-colors duration-300 font-medium"
                   >
                     {link.label}
                   </button>
@@ -77,7 +77,7 @@ export default function Header() {
                 variant="ghost"
                 size="icon"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-slate-300 hover:text-primary hover:bg-slate-800"
+                className="text-slate-300 hover:text-primary hover:bg-black"
               >
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </Button>
@@ -88,11 +88,11 @@ export default function Header() {
         {/* Mobile Navigation */}
         <div
           className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen
-              ? "max-h-96 opacity-100"
-              : "max-h-0 opacity-0 overflow-hidden"
+            ? "max-h-96 opacity-100"
+            : "max-h-0 opacity-0 overflow-hidden"
             }`}
         >
-          <div className="px-6 py-4 space-y-4 bg-slate-800 border-t border-slate-700">
+          <div className="px-6 py-4 space-y-4 bg-black border-t border-black/50">
             {navLinks.map((link) => (
               <button
                 key={link.href}

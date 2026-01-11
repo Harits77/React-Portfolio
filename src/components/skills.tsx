@@ -6,9 +6,7 @@ import {
   SiTypescript,
   SiReact,
   SiNextdotjs,
-  SiNodedotjs,
   SiMongodb,
-  SiExpress,
   SiTailwindcss,
   SiSpringboot,
   SiGit,
@@ -25,7 +23,7 @@ const frontendSkills = [
   { name: "CSS3", icon: SiCss3, color: "text-blue-500" },
   { name: "JavaScript", icon: SiJavascript, color: "text-yellow-500" },
   { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
-  { name: "React", icon: SiReact, color: "text-cyan-500" },
+  { name: "React", icon: SiReact, color: "text-white" },
   { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
   { name: "Tailwind css", icon: SiTailwindcss, color: "text-blue-400" },
 ];
@@ -42,13 +40,13 @@ const Tools = [
   { name: "GitHub", icon: SiGithub, color: "text-white" },
   { name: "Vercel", icon: SiVercel, color: "text-white" },
   { name: "Postman", icon: SiPostman, color: "text-orange-500" },
-   { name: "Docker", icon: SiDocker, color: "text-white" },
+  { name: "Docker", icon: SiDocker, color: "text-white" },
 ];
 
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-20 bg-zinc-950 text-white">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-16 text-white">
           Skills
@@ -56,16 +54,18 @@ export default function Skills() {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Frontend & Database Skills */}
-          <Card className="bg-gray-800 border-cyan-500">
+          <Card className="bg-gradient-to-br from-slate-900/70 to-black/60 border border-white/10 card-glow">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-6 text-cyan-400 text-center">
+              <h3 className="text-2xl font-semibold mb-6 text-white text-center">
                 Frontend
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {frontendSkills.map((skill, index) => (
                   <div key={index} className="flex flex-col items-center group">
-                    <skill.icon className={`text-4xl ${skill.color} mb-2 transition-transform group-hover:scale-110`} />
-                    <span className="text-gray-300 text-sm font-medium text-center">
+                    <div className="p-3 rounded-full bg-white/5 skill-icon-wrap">
+                      <skill.icon className={`text-4xl ${skill.color} mb-0 icon-glow`} />
+                    </div>
+                    <span className="text-gray-300 text-sm font-medium text-center mt-2">
                       {skill.name}
                     </span>
                   </div>
@@ -75,16 +75,18 @@ export default function Skills() {
           </Card>
 
           {/* Backend & Tools */}
-          <Card className="bg-gray-800 border-cyan-500">
+          <Card className="bg-gradient-to-br from-slate-900/70 to-black/60 border border-white/10 card-glow">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-6 text-cyan-400 text-center">
+              <h3 className="text-2xl font-semibold mb-6 text-white text-center">
                 Backend
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {backendSkills.map((skill, index) => (
                   <div key={index} className="flex flex-col items-center group">
-                    <skill.icon className={`text-4xl ${skill.color} mb-2 transition-transform group-hover:scale-110`} />
-                    <span className="text-gray-300 text-sm font-medium text-center">
+                    <div className="p-3 rounded-full bg-white/5 skill-icon-wrap">
+                      <skill.icon className={`text-4xl ${skill.color} mb-0 icon-glow`} />
+                    </div>
+                    <span className="text-gray-300 text-sm font-medium text-center mt-2">
                       {skill.name}
                     </span>
                   </div>
@@ -96,16 +98,18 @@ export default function Skills() {
       </div>
 
       <div className="w-5/6 md:w-1/3 mt-12 mx-auto">
-        <Card className="bg-gray-800  border-cyan-500 ">
+        <Card className="bg-gradient-to-br from-slate-900/70 to-black/60 border border-white/10 card-glow">
           <CardContent className="p-8">
-            <h3 className="text-2xl font-semibold mb-6 text-cyan-400 text-center">
+            <h3 className="text-2xl font-semibold mb-6 text-white text-center">
               Tools
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {Tools.map((skill, index) => (
                 <div key={index} className="flex flex-col items-center group">
-                  <skill.icon className={`text-4xl ${skill.color} mb-2 transition-transform group-hover:scale-110`} />
-                  <span className="text-gray-300 text-sm font-medium text-center">
+                  <div className="p-3 rounded-full bg-white/5 skill-icon-wrap">
+                    <skill.icon className={`text-4xl ${skill.color} mb-0 icon-glow`} />
+                  </div>
+                  <span className="text-gray-300 text-sm font-medium text-center mt-2">
                     {skill.name}
                   </span>
                 </div>
