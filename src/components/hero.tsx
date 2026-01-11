@@ -42,7 +42,7 @@ export default function Hero() {
 
 
             <p className="text-xl sm:text-2xl text-slate-400 mb-8">
-              Passionate developer at Frigate.ai, contributing my skills to drive success and grow professionally.   </p>
+              Passionate developer, contributing my skills to drive success and grow professionally.   </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 onClick={scrollToProjects}
