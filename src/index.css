@@ -227,6 +227,8 @@
   );
   animation: slow-rotate 30s linear infinite;
   opacity: 0.8;
+   will-change: transform;
+  transform: translateZ(0);
 }
 @keyframes slow-rotate {
   from {
