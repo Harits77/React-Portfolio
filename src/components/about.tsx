@@ -22,18 +22,21 @@ export default function About() {
 
           {/* Text Section */}
           <div className="animate-slide-up">
-            <h3 className="text-3xl font-semibold mb-6 text-white">
-              Full Stack Developer
-            </h3>
+             <h3 className="text-3xl font-semibold mb-6 text-white">
+               Full Stack Developer
+             </h3>
+ 
+             <p className="text-slate-300 text-lg leading-relaxed mb-6">
+              I’m Hariharan MS, an aspiring Full-Stack Developer with 6 months of internship experience building scalable web applications using
+              React.js, Next.js, Spring Boot, and MongoDB.
+             </p>
 
-            <p className="text-slate-300 text-lg leading-relaxed mb-6">
-              I'm a results-driven full-stack developer with expertise in modern web technologies and a passion for building scalable, user-focused applications.
-            </p>
-            <p className="text-slate-300 text-lg leading-relaxed">
+             <p className="text-slate-300 text-lg leading-relaxed">
               During my internship, I worked on real-time applications, developed REST APIs, and improved deployment workflows using Git, GitHub Actions, and Docker.
               I enjoy creating clean, responsive interfaces and supporting them with reliable backend systems. I’m passionate about learning, solving real-world problems,
               and contributing to impactful software projects.
-            </p>
+             </p>
+
 
           </div>
         </div>
