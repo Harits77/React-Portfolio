@@ -26,9 +26,6 @@ export default function About() {
             <p className="text-slate-300 text-lg leading-relaxed mb-6">
               I'm a results-driven full-stack developer with expertise in modern web technologies and a passion for building scalable, user-focused applications.
             </p>
-            <p className="text-slate-300 text-lg leading-relaxed mb-6">
-              Currently, I’m working as a Full Stack Developer at Frigate.ai, where I contribute to building intelligent, efficient, and robust digital solutions.
-            </p>
             <p className="text-slate-300 text-lg leading-relaxed">
               My work bridges clean code and scalable architecture, delivering smooth, responsive interfaces powered by reliable backend systems.
               I enjoy turning complex challenges into elegant digital experiences through collaboration, innovation, and practical problem-solving.
