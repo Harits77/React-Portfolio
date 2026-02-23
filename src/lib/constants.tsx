@@ -30,14 +30,6 @@ export const PROJECTS = [
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
     code: "https://github.com/Harits77/Healthlink-Pro-MERN-Project.git",
   },
-    {
-    title: "QR Code Generator",
-    description: " A React.js QR code generator with state management, styled using Tailwind CSS, dynamically creates scannable codes from user inputs.",
-    image: project3,
-    technologies: ["React.js", "Tailwind.css"],
-    livedemo: "https://qr-code-generator-two-blue.vercel.app/",
-    code: "https://github.com/Harits77/QR-Code-Generator.git",
-  },
    {
     title: "Personal Book Library",
     description: "Personal Book Library is a full-stack app that lets users search, save, and manage books using Google Books API, built with Next.js, Spring Boot, and MongoDB.",
