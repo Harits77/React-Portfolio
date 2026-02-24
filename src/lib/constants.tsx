@@ -9,7 +9,7 @@ import Project6 from "../assets/Project6.png"
 export const PROJECTS = [
   {
     title: "Kanban Board",
-    description: "A Jira-style React.js Kanban board with drag-and-drop workflow using dnd-kit, built with TypeScript and styled using Tailwind CSS. Desktop-optimized UI.",
+    description: "A React.js Kanban board with drag-and-drop workflow using dnd-kit, built with TypeScript and styled using Tailwind CSS. Desktop-optimized UI.",
     image: project3,
     technologies: ["React.js", "TypeScript", "Tailwind CSS", "dnd-kit"],
     livedemo: "https://kanban-board-react-red.vercel.app/",
